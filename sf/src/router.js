@@ -10,6 +10,7 @@ import order_check from './views/order_check.vue'
 import personal_payment from './views/personal_payment.vue'
 import pay_status from './views/pay_status.vue'
 import order_detail from './views/order_detail.vue'
+import city_select from './views/city_select.vue'
 
 
 Vue.use(Router)
@@ -66,6 +67,11 @@ export default new Router({
       path: '/order_detail',
       name: 'order_detail',
       component: order_detail
+    },
+    {
+      path: '/city_select',
+      name: 'city_select',
+      component: city_select
     }
   ]
 })

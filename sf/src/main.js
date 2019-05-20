@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router.js'
 // vant ui
+import axios from 'axios'
+import store from './store/index'
 import 'vant/lib/index.css';
 import { Cell, CellGroup } from 'vant';
 import { Switch } from 'vant';
@@ -25,8 +27,9 @@ Vue.use(Switch);
 Vue.use(Cell).use(CellGroup);
 
 Vue.config.productionTip = false
-
+Vue.prototype.$http=axios
 new Vue({
   render: h => h(App),
+  store,
   router 
 }).$mount('#app')
