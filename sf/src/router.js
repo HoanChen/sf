@@ -11,6 +11,8 @@ import personal_payment from './views/personal_payment.vue'
 import pay_status from './views/pay_status.vue'
 import order_detail from './views/order_detail.vue'
 import city_select from './views/city_select.vue'
+import order_check_private from './views/order_check_private.vue'
+import order_submission_return from './views/order_submission_return.vue'
 
 
 Vue.use(Router)
@@ -72,6 +74,16 @@ export default new Router({
       path: '/city_select',
       name: 'city_select',
       component: city_select
+    },
+    {
+      path: '/order_check_private',
+      name: 'order_check_private',
+      component: order_check_private
+    },
+    {
+      path: '/order_submission_return',
+      name: 'order_submission_return',
+      component: order_submission_return
     }
   ]
 })
