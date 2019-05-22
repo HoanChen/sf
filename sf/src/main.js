@@ -14,7 +14,9 @@ import { RadioGroup, Radio } from 'vant';
 import { Checkbox, CheckboxGroup } from 'vant';
 import { Field } from 'vant';
 import { Dialog } from 'vant';
+import { DatetimePicker } from 'vant';
 
+Vue.use(DatetimePicker);
 Vue.use(Dialog);
 Vue.use(Field);
 Vue.use(Checkbox).use(CheckboxGroup);

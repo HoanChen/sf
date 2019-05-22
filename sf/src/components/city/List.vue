@@ -82,7 +82,8 @@ export default {
 			// this.$store.dispatch('changeCity', city)
 			// this.$store.commit('changeCity', city)
 			this.changeCity(city);
-			this.$router.push("/");
+			var type = this.$route.params.stype
+			this.$router.push({name:'TicketQuery',params:{'address':city,'stype':type}})
 		},
 		...mapMutations(["changeCity"])
 	}

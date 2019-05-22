@@ -83,6 +83,6 @@ export default {
 	line-height: 40px;
 	width: 100%;
 	text-align: center;
-	color: #FF4775;
+	color: #108EE9;
 }
 </style>
